@@ -1,0 +1,13 @@
+<div>
+    <h1>Lista de cidades</h1>
+
+    <label for="UF">Insira a UF</label>
+    <br>
+    <input type="text" [(ngModel)]="uf" placeholder="PE">
+    <button (click)="enviar()">Pesquisar</button>
+    <ol>
+        <li *ngFor="let cidade of cidades">
+            {{cidade.nome}}
+        </li>
+    </ol>
+</div>
